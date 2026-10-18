@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samia Afroz Risha — Portfolio</title>
+  <meta name="description" content="Samia Afroz Risha — CSE graduate of BRAC University. Full stack developer and researcher in blockchain, federated learning and LLM-based road safety." />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">SAR<span>.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- ========== SOCIAL RAIL ========== -->
+  <aside class="social-rail">
+    <a href="https://github.com/Samia-Afroz" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/samia-afroz-570b9b226" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="mailto:afroz.samia02@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+  </aside>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <canvas id="networkCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hello">Hi, I'm</p>
+        <h1>Samia Afroz Risha</h1>
+        <h2 class="typing-line"><span id="typed"></span><span class="cursor">|</span></h2>
+        <p class="hero-sub">
+          Computer Science &amp; Engineering graduate from <strong>BRAC University</strong> building full-stack web apps, decentralized
+          applications and AI systems with thesis research on trustworthy road-fault detection using
+          <strong>Blockchain</strong>, <strong>Federated Learning</strong> and <strong>LLMs</strong>.
+        </p>
+        <div class="hero-btns">
+          <a href="#research" class="btn primary">View Research</a>
+          <a href="#contact" class="btn ghost"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down"><i class="fa-solid fa-chevron-down"></i></a>
+  </section>
+
+  <main>
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="section">
+      <h2 class="section-title"><span>01.</span> About Me</h2>
+      <div class="about-grid">
+        <div>
+         <p>
+            I completed my undergraduate degree in Computer Science and Engineering (CSE) at
+            BRAC University in 2026 and am a certified Full Stack Developer. I enjoy turning
+            ideas into working systems from Laravel and MERN web apps to Solidity smart
+            contracts, OpenGL games, and microcontroller-driven robots.
+          </p>
+          <p>
+            My undergraduate thesis explored how vehicles can detect road faults with computer vision, verify them
+            with vision-language models, learn collaboratively through federated learning, and record trustworthy
+            evidence on a permissioned blockchain.
+          </p>
+          <p>
+            I'm passionate about integrating <strong>AI/ML</strong>, <strong>cybersecurity</strong> and
+            <strong>blockchain</strong> into practical applications that solve real problems.
+          </p>
+        </div>
+        <div class="stat-cards">
+          <div class="stat"><h3>10+</h3><p>Projects built</p></div>
+          <div class="stat"><h3>4</h3><p>Domains: Web · Blockchain · AI · Robotics</p></div>
+          <div class="stat"><h3>2026</h3><p>B.Sc. CSE, BRAC University</p></div>
+          <div class="stat"><h3><i class="fa-solid fa-award"></i></h3><p>Daily Star Award (O-Level)</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== RESEARCH ========== -->
+    <section id="research" class="section">
+      <h2 class="section-title"><span>02.</span> Research</h2>
+      <article class="thesis-card">
+        <div class="thesis-head">
+          <span class="tag">Undergraduate Thesis · BRAC University · 2025–2026</span>
+          <h3>Blockchain-Integrated Federated Learning for Trustworthy Road Fault Detection</h3>
+          <p>
+            A system where vehicles detect potholes, cracks and missing road signs from dashcam video,
+            verify each detection with a vision-language model, improve the detection model together through
+            federated learning without sharing raw data, and record reports and rewards on a permissioned blockchain.
+          </p>
+          <div class="chip-row">
+            <span class="chip">YOLOv11</span><span class="chip">Qwen2.5-VL</span><span class="chip">Federated Learning (Flower)</span>
+            <span class="chip">Hyperledger Besu</span><span class="chip">Solidity</span><span class="chip">Machine Unlearning</span>
+            <span class="chip">Python</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section id="projects" class="section">
+      <h2 class="section-title"><span>03.</span> Projects</h2>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="web">Web</button>
+        <button class="filter" data-filter="blockchain">Blockchain</button>
+        <button class="filter" data-filter="hardware">Hardware &amp; Robotics</button>
+        <button class="filter" data-filter="graphics">Graphics</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+        <div class="project-card" data-cat="hardware">
+          <div class="p-icon"><i class="fa-solid fa-seedling"></i></div>
+          <h3>Smart Irrigation Robot</h3>
+          <p>A robot that reads soil-moisture sensors and automatically waters the soil when it gets dry, stopping once the target moisture level is reached — saving water and manual effort.</p>
+          <div class="chip-row"><span class="chip">Arduino</span><span class="chip">Soil Moisture Sensor</span><span class="chip">Water Pump</span></div>
+          <a href="https://github.com/Samia-Afroz" target="_blank" class="p-link"><i class="fa-brands fa-github"></i> Code</a>
+        </div>
+
+        <div class="project-card" data-cat="hardware">
+          <div class="p-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3>Microprocessor Project</h3>
+          <p>Low-level system built with microprocessor interfacing — assembly programming, I/O handling and peripheral control. <!-- TODO: replace with your exact project description --></p>
+          <div class="chip-row"><span class="chip">Assembly</span><span class="chip">Microprocessor</span><span class="chip">Interfacing</span></div>
+          <a href="https://github.com/Samia-Afroz" target="_blank" class="p-link"><i class="fa-brands fa-github"></i> Code</a>
+        </div>
+
+        <div class="project-card" data-cat="web">
+          <div class="p-icon"><i class="fa-solid fa-bell"></i></div>
+          <h3>Victim Alert App</h3>
+          <p>Real-time emergency alert system that notifies emergency contacts and authorities. Built REST APIs in Express.js and the interface in React.js with an Agile team.</p>
+          <div class="chip-row"><span class="chip">React.js</span><span class="chip">Express.js</span><span class="chip">Node.js</span></div>
+          <a href="https://github.com/Samia-Afroz" target="_blank" class="p-link"><i class="fa-brands fa-github"></i> Code</a>
+        </div>
+
+        <div class="project-card" data-cat="web">
+          <div class="p-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <h3>PCOSYNC</h3>
+          <p>A personalised PCOS health platform covering diet planning, stress management and health tracking, built on the MERN stack.</p>
+          <div class="chip-row"><span class="chip">MongoDB</span><span class="chip">Express</span><span class="chip">React</span><span class="chip">Node</span></div>
+          <a href="https://github.com/Samia-Afroz" target="_blank" class="p-link"><i class="fa-brands fa-github"></i> Code</a>
+        </div>
+
+        <div class="project-card" data-cat="web">
+          <div class="p-icon"><i class="fa-solid fa-ticket"></i></div>
+          <h3>Movie Ticket Booking System</h3>
+          <p>Dynamic web app for booking movie tickets online with interactive seat selection and MySQL-backed reservations.</p>
+          <div class="chip-row"><span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">JavaScript</span></div>
+          <a href="https://github.com/Samia-Afroz" target="_blank" class="p-link"><i class="fa-brands fa-github"></i> Code</a>
+        </div>
+
+        <div class="project-card" data-cat="blockchain">
+          <div class="p-icon"><i class="fa-brands fa-ethereum"></i></div>
+          <h3>Decentralized Applications</h3>
+          <p>Smart contracts and blockchain solutions for small-scale applications with secure transaction management on Ethereum and Hyperledger.</p>
+          <div class="chip-row"><span class="chip">Solidity</span><span class="chip">Ethereum</span><span class="chip">Hyperledger</span></div>
+          <a href="https://github.com/Samia-Afroz" target="_blank" class="p-link"><i class="fa-brands fa-github"></i> Code</a>
+        </div>
+
+        <div class="project-card" data-cat="graphics">
+          <div class="p-icon"><i class="fa-solid fa-gamepad"></i></div>
+          <h3>2D/3D OpenGL Games</h3>
+          <p>Interactive games with 2D/3D models in Python OpenGL, featuring animation, collision detection and user-controlled interaction.</p>
+          <div class="chip-row"><span class="chip">Python</span><span class="chip">OpenGL</span></div>
+          <a href="https://github.com/Samia-Afroz" target="_blank" class="p-link"><i class="fa-brands fa-github"></i> Code</a>
+        </div>
+
+        <div class="project-card" data-cat="web">
+          <div class="p-icon"><i class="fa-brands fa-wordpress"></i></div>
+          <h3>WordPress &amp; Responsive Sites</h3>
+          <p>Customised WordPress themes and plugins, plus responsive HTML/CSS/JS sites with Bootstrap; UI designed in Figma.</p>
+          <div class="chip-row"><span class="chip">WordPress</span><span class="chip">Bootstrap</span><span class="chip">Figma</span></div>
+          <a href="https://github.com/Samia-Afroz" target="_blank" class="p-link"><i class="fa-brands fa-github"></i> Code</a>
+        </div>
+      </div>
+
+      <!-- ===== PROJECT GALLERY (slider) ===== -->
+      <h3 class="sub-title gallery-title"><i class="fa-solid fa-images"></i> Project Gallery</h3>
+      <div class="gallery" id="gallery">
+        <button class="g-btn prev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="g-viewport">
+          <div class="g-track">
+          <figure class="slide">
+            <div class="slide-media" data-img="assets/projects/grocery-store"><i class="fa-solid fa-basket-shopping"></i></div>
+            <figcaption><h4>Fresh Grocery Store</h4><p>E-commerce site for fresh fruits and vegetables with categories and offers.</p></figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="slide-media" data-img="assets/projects/interior-design"><i class="fa-solid fa-couch"></i></div>
+            <figcaption><h4>Interior Design Agency</h4><p>Agency website for interior design, planning and architecture services.</p></figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="slide-media" data-img="assets/projects/outdoor-adventure"><i class="fa-solid fa-mountain-sun"></i></div>
+            <figcaption><h4>Outdoor Adventure</h4><p>Travel and adventure site with upcoming events and tour destinations.</p></figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="slide-media" data-img="assets/projects/martine-travel"><i class="fa-solid fa-umbrella-beach"></i></div>
+            <figcaption><h4>Martine Travel</h4><p>Tour booking site for hotels, tickets and travel packages.</p></figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="slide-media" data-img="assets/projects/sneaky-restaurant"><i class="fa-solid fa-utensils"></i></div>
+            <figcaption><h4>Sneaky Restaurant</h4><p>Restaurant website with menu, chefs and table reservation.</p></figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="slide-media" data-img="assets/projects/startup-agency"><i class="fa-solid fa-rocket"></i></div>
+            <figcaption><h4>Startup Agency</h4><p>Business site for a startup with services and featured works.</p></figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="slide-media" data-img="assets/projects/burger-house"><i class="fa-solid fa-burger"></i></div>
+            <figcaption><h4>Burger House</h4><p>Food landing page with menu, events and table booking.</p></figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="slide-media" data-img="assets/projects/signup-pages"><i class="fa-solid fa-user-plus"></i></div>
+            <figcaption><h4>Sign-Up Pages</h4><p>Responsive sign-up and registration form designs.</p></figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="slide-media" data-img="assets/projects/leverage-photography"><i class="fa-solid fa-camera"></i></div>
+            <figcaption><h4>Leverage Photography</h4><p>Dark-themed photography and visual art website.</p></figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="slide-media" data-img="assets/projects/gorgo-blog"><i class="fa-solid fa-pen-nib"></i></div>
+            <figcaption><h4>Gorgo Blog &amp; Magazine</h4><p>Minimal content-focused blog and magazine landing page.</p></figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="slide-media" data-img="assets/projects/quick-business"><i class="fa-solid fa-briefcase"></i></div>
+            <figcaption><h4>Quick Business</h4><p>Clean landing page for an online business.</p></figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="slide-media" data-img="assets/projects/news-portal"><i class="fa-solid fa-newspaper"></i></div>
+            <figcaption><h4>News Portal</h4><p>Magazine-style news website with categories and breaking news.</p></figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="slide-media" data-img="assets/projects/newsportal-sports"><i class="fa-solid fa-futbol"></i></div>
+            <figcaption><h4>NewsPortal Sports</h4><p>Sports news site with main stories and editor's picks.</p></figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="slide-media" data-img="assets/projects/mexdical-pharmacy"><i class="fa-solid fa-prescription-bottle-medical"></i></div>
+            <figcaption><h4>Mexdical Pharmacy</h4><p>Online pharmacy store with categories and daily deals.</p></figcaption>
+          </figure>
+          </div>
+        </div>
+        <button class="g-btn next" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="g-dots"></div>
+      </div>
+      <p class="more">More on <a href="https://github.com/Samia-Afroz" target="_blank">GitHub →</a></p>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section id="skills" class="section">
+      <h2 class="section-title"><span>04.</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-box"><h3><i class="fa-solid fa-palette"></i> Front-end</h3><div class="chip-row"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">React.js</span><span class="chip">Bootstrap</span><span class="chip">Figma</span></div></div>
+        <div class="skill-box"><h3><i class="fa-solid fa-server"></i> Back-end</h3><div class="chip-row"><span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">MERN</span><span class="chip">REST APIs</span></div></div>
+        <div class="skill-box"><h3><i class="fa-solid fa-database"></i> Database &amp; CMS</h3><div class="chip-row"><span class="chip">MySQL</span><span class="chip">MongoDB</span><span class="chip">WordPress</span></div></div>
+        <div class="skill-box"><h3><i class="fa-solid fa-link"></i> Blockchain</h3><div class="chip-row"><span class="chip">Solidity</span><span class="chip">Ethereum</span><span class="chip">Hyperledger Besu</span><span class="chip">Hardhat</span><span class="chip">Ganache</span></div></div>
+        <div class="skill-box"><h3><i class="fa-solid fa-brain"></i> AI / ML</h3><div class="chip-row"><span class="chip">Python</span><span class="chip">YOLO</span><span class="chip">Vision-Language Models</span><span class="chip">Federated Learning</span></div></div>
+        <div class="skill-box"><h3><i class="fa-solid fa-microchip"></i> Hardware &amp; Graphics</h3><div class="chip-row"><span class="chip">Microprocessors</span><span class="chip">Arduino / Sensors</span><span class="chip">OpenGL</span></div></div>
+        <div class="skill-box"><h3><i class="fa-solid fa-code-branch"></i> Tools &amp; Practices</h3><div class="chip-row"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Agile</span><span class="chip">Cybersecurity awareness</span></div></div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCE ========== -->
+    <section id="experience" class="section">
+      <h2 class="section-title"><span>05.</span> Experience</h2>
+      <div class="timeline">
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <span class="date">2025 – 2026</span>
+            <h3>Undergraduate Researcher — Thesis Group</h3>
+            <p class="org">Dept. of CSE, BRAC University</p>
+            <p>Designed and built a blockchain-integrated federated learning system for road fault detection with LLM-based verification.</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <span class="date">Freelance</span>
+            <h3>Full Stack Developer</h3>
+            <p class="org">Freelance Projects</p>
+            <p>Designed and implemented full-stack web apps, developed RESTful APIs, and collaborated through Git version control.</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <span class="date">Workshops</span>
+            <h3>Workshops &amp; Hackathons</h3>
+            <p class="org">Agent X · Cybersecurity · AI/ML</p>
+            <p>Active participant in the Agent X AI workshop, cybersecurity workshops and AI/ML introductory sessions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EDUCATION ========== -->
+    <section id="education" class="section">
+      <h2 class="section-title"><span>06.</span> Education</h2>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <div>
+            <h3>B.Sc. in Computer Science &amp; Engineering</h3>
+            <p class="org">BRAC University, Dhaka · 2026</p>
+            <p><strong>Thesis:</strong> Blockchain-Integrated Federated Learning for Road Fault Detection</p>
+          </div>
+        </div>
+        <div class="edu-card">
+          <i class="fa-solid fa-school"></i>
+          <div>
+            <h3>O-Level &amp; A-Level</h3>
+            <p class="org">Alfred International School and College</p>
+            <p>Daily Star Award for outstanding O-Level results; strong A-Level grades.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-title">Certifications &amp; Awards</h3>
+      <ul class="award-list">
+        <li><i class="fa-solid fa-trophy"></i> The Daily Star Award — academic excellence in O-Level</li>
+        <li><i class="fa-solid fa-certificate"></i> Certified Full Stack Developer</li>
+        <li><i class="fa-solid fa-shield-halved"></i> Cybersecurity Workshop</li>
+        <li><i class="fa-solid fa-robot"></i> Agent X AI Workshop</li>
+      </ul>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section contact">
+      <h2 class="section-title"><span>07.</span> Get In Touch</h2>
+      <p>I'm open to research collaborations, internships and full-stack or AI roles. My inbox is always open.</p>
+      <div class="contact-cards">
+        <a href="mailto:afroz.samia02@gmail.com" class="c-card"><i class="fa-solid fa-envelope"></i><span>afroz.samia02@gmail.com</span></a>
+        <a href="mailto:samia.afroz.risha@g.bracu.ac.bd" class="c-card"><i class="fa-solid fa-building-columns"></i><span>samia.afroz.risha@g.bracu.ac.bd</span></a>
+        <a href="https://www.linkedin.com/in/samia-afroz-570b9b226" target="_blank" class="c-card"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+        <a href="https://github.com/Samia-Afroz" target="_blank" class="c-card"><i class="fa-brands fa-github"></i><span>github.com/Samia-Afroz</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Samia Afroz Risha · Dhaka, Bangladesh</p>
+  </footer>
+
+  <button id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
+</body>
+</html>
